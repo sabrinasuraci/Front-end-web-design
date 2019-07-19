@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700|Thasadith:400,700&display=swap');
+
+body {
+    background-color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+}
+
+.wrapper {
+    width: 80%;
+    /* margin:TOP/BOTTOM left/right */
+    margin: 0 auto;
+}
+
+
+
+h1,
+h2,
+h3,
+    {
+    font-family: 'Thasadith', sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    top: 2.778em;
+    padding-top: 0.7em;
+    color: black;
+    text-align: center;
+    letter-spacing: 0.111em;
+    text-transform: uppercase;
+    letter-spacing: 0.556em;
+}
+
+
+h2 {
+    font-size: 3.611em;
+    color: black;
+    padding: 2em 0 1em 0;
+    text-align: center;
+    letter-spacing: 0.111em;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+}
+
+
+
+h4 {
+    font-size: 3.611em;
+    color: black;
+    padding: 0 0 1em 0;
+    text-align: center;
+    letter-spacing: 0.111em;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin 0.833em 0 1.389em 0;
+    text-align: center;
+    letter-spacing: .222em;
+    padding-top: 1.2em
+}
+
+h5 {
+    font-size: 1em;
+    color: black;
+    padding: 1em 0 0 0;
+    line-height: 1.5em;
+}
+
+
+.grey {
+    background-color: whitesmoke;
+    padding: 1.5em 0;
+}
+
+/* all paragraphs*/
+p {
+
+    margin: 1.5em 0;
+    line-height: 1.667em;
+
+}
+
+
+a {
+    color: black;
+    font-size: 1.111em;
+    text-decoration: none;
+}
+
+
+a:visited {
+    color: black;
+    background-color: none;
+}
+
+/*color when hover over a link*/
+a:hover {
+    color: skyblue;
+}
+
+a:active {
+    color: skyblue;
+}
+
+
+
+ul {
+    margin-top: 0.556em;
+
+
+}
+
+/*navigation*/
+
+nav ul {
+    list-style-type: none;
+    background-color: white;
+    padding-bottom: 1em
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+
+}
+
+nav ul li a:hover {
+    background-color: none;
+    color: skyblue;
+
+}
+
+li {
+    margin-left: 0px;
+    padding: .7em;
+    list-style: circle;
+    line-height: 1em;
+
+}
+
+
+
+header {
+    background-color: white;
+    height: 7.222em;
+    position: fixed;
+    width: 100%;
+}
+
+
+
+nav {
+
+    text-align: center;
+    background-color: none;
+    margin-top: 1.111em;
+}
+
+
+nav ul li {
+    background-color: none;
+}
+
+/* Main image set as a background  */
+
+.hero-content {
+
+    background-image: url(../Images/churchill-house-9.jpg);
+    padding-top: 25em;
+    background-repeat: no-repeat;
+    width: 100%;
+
+}
+
+.hero-content-about {
+
+    background-image: url(../Images/churchill-house-31.jpg);
+    padding-top: 23em;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.hero-content-history {
+
+    background-image: url(../Images/churchill-house-29.jpg);
+    padding-top: 25em;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.hero-content-architect {
+
+    background-image: url(../Images/churchill-house-26.jpg);
+    padding-top: 25em;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+main {
+    background-color: white;
+    padding-top: 4.444em;
+    height: auto;
+}
+
+.row {
+    background-color: whitesmoke;
+
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 4em 0;
+    text-align: center;
+}
+
+
+.column1 {
+    float: left;
+    width: 25%;
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* just target the paragraph in the footer*/
+footer {
+    clear: both;
+    padding-top: 10em;
+}
+
+footer p {
+    font-size: 0.889em;
+    color: black;
+    /*    padding-top: 20em;
+    */
+    text-align: center;
+
+}
+
+
+
+
+/* media query for phones */
+
+@media screen and (max-device-width:400px) {
+    .wrapper {
+        width: 98%;
+
+    }
+}
+
+/* media query will target devicec largers than 400px and less then 768 */
+
+@media screen and (min-device-width:400px) and (max-device-width:768px) {
+
+    .wrapper {
+        width: 95%;
+    }
+}
+
+/* makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+    .column {
+        width: 100%;
+    }
+}
